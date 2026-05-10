@@ -1,0 +1,35 @@
+[
+  {
+    "entity_id": "123",
+    "name": ".net",
+    "link": "shl.com/xx-xx-xx",
+    "scraped_at": "2026-05-10",
+    "job_levels": [
+      "associate",
+      "senior associate",
+      "director",
+      "mid-professional",
+      "graduate",
+      "front-line manager",
+      ""
+      ""
+    ],
+    "job_levels_raw": "",
+    "languages": [],
+    "languages_raw": "",
+    "duration": "",
+    "duration_raw": "",
+    "status": "ok",
+    "remote": "yes",
+    "adaptive": "no",
+    "description": "",
+    "keys": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]
