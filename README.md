@@ -2,23 +2,33 @@
 
 A conversational AI agent that helps hiring managers find relevant SHL assessments.
 
-## Quick Start
+## Local Setup
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate        # Windows
 pip install -r requirements.txt
-cp .env.example .env        # add your GROQ_API_KEY
-python scraper/scrape_catalog.py
+```
+
+## Running Locally
+
+```bash
+# 1. Build the FAISS index (only needed once)
 python embeddings/build_index.py
+
+# 2. Start the API server
 uvicorn app.main:app --reload
 ```
 
-Then open: http://localhost:8000/docs
+## API Endpoints
 
-## API
+- `GET  /health` — Health check
+- `POST /chat`   — Conversational recommendation endpoint
+- `GET  /docs`   — Interactive Swagger UI
 
-- `GET /health` — health check
-- `POST /chat` — conversational assessment recommender
+## Environment Variables
 
-## Deployment
-
-Deployed on Railway. See `railway.json` for config.
+Create a `.env` file:
+```
+GROQ_API_KEY=your_key_here
+```
